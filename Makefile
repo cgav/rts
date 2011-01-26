@@ -20,6 +20,8 @@ real:
 	sed "s/with Digital_IO_Sim; use Digital_IO_Sim;/with Digital_IO; use Digital_IO;/g" robot_interface.adb > tmp1234.adb
 	mv tmp1234.adb robot_interface.adb
 
+	gcc -c get_iopl_3.c
+
 	cp robot_monitor_real.adb robot_monitor.adb
 	cp robot_interface_real.adb robot_interface.adb
 	gnatmake hanoi.adb
