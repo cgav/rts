@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export LD_PRELOAD=/opt/gtkada/lib/libgtkada-2.14.so.0
+./hanoi
