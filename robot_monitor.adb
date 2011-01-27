@@ -56,11 +56,14 @@ package body Robot_Monitor is
 
       procedure Print_Pos (P : in Position)is
       begin
+	 Put_Line("-------------------------------------------------");
          Put_Line("Position of robot");
+	 Put_Line("-------------------------------------------------");
          Put_Line("Rotation: " & Integer'Image(P.Rotation));
-         Put_Line("Forward: " & Integer'Image(P.Forward));
-         Put_Line("Height: " & Integer'Image(P.Height));
-         Put_Line("Clamp: " & Integer'Image(P.Clamp));
+         Put_Line("Forward:  " & Integer'Image(P.Forward));
+         Put_Line("Height:   " & Integer'Image(P.Height));
+         Put_Line("Clamp:    " & Integer'Image(P.Clamp));
+	 Put_Line("");
       end Print_Pos;
 
    end Robot_Mon;
